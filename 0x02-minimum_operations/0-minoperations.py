@@ -12,14 +12,9 @@ def minOperations(n):
         return 0
     op, root = 0, 2
     while root <= n:
-        
         if n % root == 0:
-            
             op += root
-            
             n = n / root
-            
             root -= 1
-        
         root += 1
     return op
